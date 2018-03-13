@@ -13,7 +13,7 @@ all:
 
 hptn:		
 	echo $(CWD)		
-	curl "https://raw.githubusercontent.com/mrehp2/POPART-IBM/PangeaSim/PANGEA_SIM.tar.gz" -o PANGEA_SIM.tar.gz
+	curl "https://raw.githubusercontent.com/niemasd/POPART-IBM/PangeaSim/PANGEA_SIM.tar.gz" -o PANGEA_SIM.tar.gz
 	tar -zxvf PANGEA_SIM.tar.gz
 	make -C PANGEA_SIM/SCENARIO_HIGHACUTE
 	mv -f $(CWD)/PANGEA_SIM/SCENARIO_HIGHACUTE/popart-simul.exe ../inst/ext/popart-highacute
